@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibagué Músical</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+
+
+            <ul class="sidebar">
+
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                            viewBox="0 96 960 960" width="26">
+                            <path
+                                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                        </svg></a></li>
+                </a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="monumentos.html">Monumentos</a></li>
+                <li><a href="fiestas.html">Fiestas</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+
+            </ul>
+            <ul>
+
+
+                <a href="index.html" class="logo">
+                    <img src="Images/logo.png" alt="logo clave de sol" class="logo__img">
+                    <span class="logo__text">IBAGUÉ MUSICAL</span>
+                </a>
+
+
+
+
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="monumentos.html">Monumentos</a></li>
+                <li class="hideOnMobile"><a href="fiestas.html">Fiestas</a></li>
+                <li class="hideOnMobile"><a href="musica.html">Música</a></li>
+                <li class="hideOnMobile"><a href="aboutUs.html">About us</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="26" viewBox="0 96 960 960" width="26">
+                            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                        </svg></a></li>
+
+                <!--<div class="idioma">
+                        <li><a href="#"><img src="Images/colombia.png" alt="icono bandera colombia"></a></li>
+                        <li><a href="#"><img src="Images/united-states.png" alt="icono bandera usa"></a></li>
+                     </div>  -->
+
+            </ul>
+
+
+        </nav>
+
+    </header>
+    <!--footer-->
+    <footer class="footer">
+        <div class="social">
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Monumentos</a>
+            </li>
+            <li>
+                <a href="#">Fiestas</a>
+            </li>
+            <li>
+                <a href="#">Música</a>
+            </li>
+            <li>
+                <a href="#">About us</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Ibagué Músical @ 2025
+        </p>
+
+    </footer>
+</body>
+
+<script>
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+
+</script>
+
+</html>
