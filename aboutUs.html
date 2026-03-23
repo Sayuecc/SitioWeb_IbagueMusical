@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<![CDATA[<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibagué Músical- About Us</title>
+    <title data-i18n="about.metaTitle">Ibagué Músical- About Us</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,69 +19,12 @@
 </head>
 
 <body>
-     <!--Barra de navegación-->
-     <header>
-
-        <nav>
-            <!--Sidebar (mobile)-->
-            <ul class="sidebar">
-
-                <li><a href="index.html">Home</a></li>
-                <li><a href="monumentos.html">Monumentos</a></li>
-                <li><a href="fiestas.html">Fiestas</a></li>
-                <li><a href="musica.html">Música</a></li>
-                <li><a href="aboutUs.html">About us</a></li>
-
-                <!--bandera de idioma-->
-
-                <li class="idioma-mobile">
-                    <div class="banderas">
-                        <a href="#"><img src="Images/colombia.png" alt="icono bandera colombia"></a>
-                        <a href="#"><img src="Images/united-states.png" alt="icono bandera usa"></a>
-                </li>
-                </div>
-                <!--menu hamburguesa-->
-
-                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
-                            viewBox="0 96 960 960" width="26">
-                            <path
-                                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                        </svg></a></li>
-                </a></li>
-
-            </ul>
-
-            <!--Sidebar (desktop)-->
-            <ul>
-                <a href="index.html" class="logo">
-                    <img src="Images/logo.png" alt="logo clave de sol" class="logo__img">
-                    <span class="logo__text">IBAGUÉ MUSICAL</span>
-                </a>
-
-                <li class="hideOnMobile"><a href="index.html">Home</a></li>
-                <li class="hideOnMobile"><a href="monumentos.html">Monumentos</a></li>
-                <li class="hideOnMobile"><a href="fiestas.html">Fiestas</a></li>
-                <li class="hideOnMobile"><a href="musica.html">Música</a></li>
-                <li class="hideOnMobile"><a href="aboutUs.html">About us</a></li>
-
-                <!--bandera de idioma-->
-
-                <li class="idioma-desktop hideOnMobile">
-                    <a href="#" class="hideOnMobile"><img src="Images/colombia.png" alt="icono bandera colombia"></a>
-                    <a href="#" class="hideOnMobile"><img src="Images/united-states.png" alt="icono bandera usa"></a>
-                </li>
-
-                <li class="menu-button" onclick=showSidebar()><a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-                            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
-                        </svg></a></li>
-            </ul>
-        </nav>
-    </header>
+    <!--Barra de navegación-->
+    <div id="navbar"></div>
 
     <div class="heading">
-        <h1>About us</h1>
-        <p> Estamos interesados en la promoción y conservación de la memoria histórica de la región. </p>
+        <h1 data-i18n="about.heading">About us</h1>
+        <p data-i18n="about.intro"> Estamos interesados en la promoción y conservación de la memoria histórica de la región. </p>
     </div>
 
     <div class="container1">
@@ -90,12 +33,12 @@
                 <img src="Images/ibague2.jpg" alt="letrero ibague">
             </div>
             <div class="about-content">
-                <h2>Por la memoria histórica</h2>
-                <p> Bienvenidos a nuestro sitio web, un espacio dedicado a resaltar la riqueza musical de Ibagué,
+                <h2 data-i18n="about.sectionTitle">Por la memoria histórica</h2>
+                <p data-i18n="about.description"> Bienvenidos a nuestro sitio web, un espacio dedicado a resaltar la riqueza musical de Ibagué,
                     reconocida como la Capital Musical de Colombia. A lo largo de su historia, la ciudad ha forjado su
                     identidad cultural a través de monumentos, festivales y una vibrante tradición artística que la
                     convierten en un verdadero epicentro musical.</p>
-                <a href="" class="read-more">Leer más</a>
+                <a href="" class="read-more" data-i18n="about.readMore">Leer más</a>
             </div>
 
         </section>
@@ -111,46 +54,28 @@
 
         <ul class="list">
             <li>
-                <a href="#">Home</a>
+                <a href="#" data-i18n="footer.home">Home</a>
             </li>
             <li>
-                <a href="#">Monumentos</a>
+                <a href="#" data-i18n="footer.monuments">Monumentos</a>
             </li>
             <li>
-                <a href="#">Fiestas</a>
+                <a href="#" data-i18n="footer.festivals">Fiestas</a>
             </li>
             <li>
-                <a href="#">Música</a>
+                <a href="#" data-i18n="footer.music">Música</a>
             </li>
             <li>
-                <a href="#">About us</a>
+                <a href="#" data-i18n="footer.about">About us</a>
             </li>
         </ul>
-        <p class="copyright">
+        <p class="copyright" data-i18n="footer.copyright">
             Ibagué Músical @ 2025
         </p>
 
     </footer>
 
-
-
-
-
-
-
-
 </body>
-<script>
-    function showSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex'
-    }
+<script src="js/script.js"></script>
 
-    function hideSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'none'
-    }
-
-</script>
-
-</html>
+</html>]]>

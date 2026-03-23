@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<![CDATA[<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,58 +22,132 @@
 </head>
 
 <body>
-    <header>
+        <!--Barra de navegación-->
+    <div id="navbar"></div>
 
-        <nav>
-
-
-            <ul class="sidebar">
-
-                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
-                            viewBox="0 96 960 960" width="26">
-                            <path
-                                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                        </svg></a></li>
-                </a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="monumentos.html">Monumentos</a></li>
-                <li><a href="fiestas.html">Fiestas</a></li>
-                <li><a href="musica.html">Música</a></li>
-                <li><a href="aboutUs.html">About us</a></li>
-
-            </ul>
-            <ul>
-
-
-                <a href="index.html" class="logo">
-                    <img src="Images/logo.png" alt="logo clave de sol" class="logo__img">
-                    <span class="logo__text">IBAGUÉ MUSICAL</span>
-                </a>
-
-
-
-
-                <li class="hideOnMobile"><a href="index.html">Home</a></li>
-                <li class="hideOnMobile"><a href="monumentos.html">Monumentos</a></li>
-                <li class="hideOnMobile"><a href="fiestas.html">Fiestas</a></li>
-                <li class="hideOnMobile"><a href="musica.html">Música</a></li>
-                <li class="hideOnMobile"><a href="aboutUs.html">About us</a></li>
-                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                            height="26" viewBox="0 96 960 960" width="26">
-                            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
-                        </svg></a></li>
-
-                <!--<div class="idioma">
-                    <li><a href="#"><img src="Images/colombia.png" alt="icono bandera colombia"></a></li>
-                    <li><a href="#"><img src="Images/united-states.png" alt="icono bandera usa"></a></li>
-                 </div>  -->
-
-            </ul>
-
-
-        </nav>
-
-    </header>
+    <!--contenido página-->
+    <div id="heading-fiestas" class="heading" style="display: none;">
+        <h1 data-i18n="festivals.heading.title">Fiestas del Folclor</h1>
+    </div>
+    
+    <!-- Concursos Section -->
+    <div id="concursos" style="display: none;">
+        <div class="heading">
+            <h1 data-i18n="festivals.contests.title">Concursos Musicales</h1>
+            <p data-i18n="festivals.contests.subtitle">Los concursos que forjaron la identidad musical de Ibagué</p>
+        </div>
+        <div class="container-ruta">
+            <div class="ruta-map">
+                <img src="Images/fotofestival.webp" alt="Festival Musical Ibagué" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            </div>
+            <div class="ruta-content">
+                <p data-i18n="festivals.contests.intro">A continuación, veamos algunos de los festivales y eventos que contribuyeron a que Ibagué construyera su imagen como ciudad musical:</p>
+            </div>
+        </div>
+        
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-year" data-i18n="festivals.contests.1935.year">1935</div>
+                <div class="timeline-content">
+                    <p data-i18n="festivals.contests.1935.description">Se realizó el <strong>Congreso Nacional de Música</strong>, impulsado por el entonces director del Conservatorio del Tolima, Alberto Castilla. Su objetivo era promover la participación de músicos de diferentes regiones en la construcción de la música nacional.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year" data-i18n="festivals.contests.1959.year">1959</div>
+                <div class="timeline-content">
+                    <p data-i18n="festivals.contests.1959.description">En octubre de este año se fundó el <strong>Festival Folclórico Colombiano</strong>, con el propósito de exaltar y difundir las tradiciones culturales y musicales del país.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year" data-i18n="festivals.contests.1980_1994.year">1980 – 1994</div>
+                <div class="timeline-content">
+                    <p data-i18n="festivals.contests.1980_1994.description">Se llevó a cabo el <strong>Concurso Polifónico Internacional Ciudad de Ibagué</strong>, que contó con la participación de países como Italia, Chile, Ecuador y Venezuela.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year" data-i18n="festivals.contests.1987.year">1987</div>
+                <div class="timeline-content">
+                    <p data-i18n="festivals.contests.1987.description">Se dio inicio al homenaje anual al dueto <strong>Garzón y Collazos</strong>, como reconocimiento a su aporte a la música colombiana.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year" data-i18n="festivals.contests.1995.year">1995</div>
+                <div class="timeline-content">
+                    <p data-i18n="festivals.contests.1995.description">Se creó el <strong>Concurso Nacional de Duetos "Príncipes de la Canción"</strong>, enfocado en promover la música andina colombiana.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year" data-i18n="festivals.contests.1998.year">1998</div>
+                <div class="timeline-content">
+                    <p data-i18n="festivals.contests.1998.description">Se creó el <strong>Concurso Nacional de Composición Musical Leonor Buenaventura</strong>, con el fin de incentivar la creación musical en el país.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- San Pedro (Festivales) Section -->
+    <div id="san-pedro" style="display: none;">
+        <div class="heading">
+            <h1 data-i18n="festivals.sanPedro.title">San Juan y San Pedro</h1>
+            <p></p>
+        </div>
+        <div class="container-ruta">
+            <div class="ruta-map">
+                <iframe src="https://www.youtube.com/embed/SR47m8QywWI?si=aqYOKV6QiTK2bkxK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="ruta-content">
+                <p data-i18n="festivals.sanPedro.paragraph1">Los festivales de junio creados bajo el liderazgo de Adriano Tribín, tenían como principal objetivo según su promotor principal de crear la "la oportunidad perfecta a fin de estimular en la ciudad y las veredas cercanas el amor por los valores tradicionales y autóctonos y nuestra inagotable vena vernácula, llena de música y colorido"</p>
+                
+                <p data-i18n="festivals.sanPedro.paragraph2">Es interesante conocer como las razones de su creación no fueron puramente culturales, sino que tenían un interés político de posicionar el evento como una ruptura simbólica entre la Violencia y el Frente Nacional. Así las cosas, querer iniciar un evento de esta categoría no era gratuito, sino que respondía a la necesidad de mejorar la imagen del Tolima en el contexto nacional, como consecuencia de una de las más cruentas formas de violencia que padeció el departamento y que lo dejó fracturado socialmente.</p>
+                
+                <p data-i18n="festivals.sanPedro.paragraph3">Se quería, sobre todo, calmar las pasiones, los odios y olvidar los malos recuerdos de la guerra. En este sentido, el Festival presentó una estrategia de memoria al buscar efectuar un cambio en la manera en que se quería proyectar la Ciudad Musical y el pueblo tolimense en general.</p>
+                
+                <p><strong data-i18n="festivals.sanPedro.cta">Por eso, te invitamos a vivir esta experiencia y conocer dos de las celebraciones más importantes: las fiestas de San Juan, el 24 de junio, y las de San Pedro, el 29 de junio. Ven y disfruta de los desfiles, los reinados y la deliciosa gastronomía típica del Tolima.</strong></p>
+            </div>
+        </div>
+        
+        <!-- Calendar Section -->
+        <div style="width: 90%; max-width: 1200px; margin: 40px auto;">
+            <p style="font-size: 1rem; font-weight: 600; color: #6d2323; margin-bottom: 20px;" data-i18n="festivals.calendar.title">Otras fechas que no te debes perder en junio:</p>
+            <div class="calendar-container">
+                <div class="dates-calendar">
+                    <div class="date-item">
+                        <span class="date-number" data-i18n="festivals.calendar.22.day">22</span>
+                        <span class="date-name" data-i18n="festivals.calendar.22.name">Día del Aguardiente Tapa Roja</span>
+                    </div>
+                    <div class="date-item">
+                        <span class="date-number" data-i18n="festivals.calendar.23.day">23</span>
+                        <span class="date-name" data-i18n="festivals.calendar.23.name">Día del Sombrero Tolimense</span>
+                    </div>
+                    <div class="date-item">
+                        <span class="date-number" data-i18n="festivals.calendar.24.day">24</span>
+                        <span class="date-name" data-i18n="festivals.calendar.24.name">Día del Tamal Tolimense</span>
+                    </div>
+                    <div class="date-item">
+                        <span class="date-number" data-i18n="festivals.calendar.25.day">25</span>
+                        <span class="date-name" data-i18n="festivals.calendar.25.name">Día de la Achira Tolimense</span>
+                    </div>
+                    <div class="date-item">
+                        <span class="date-number" data-i18n="festivals.calendar.27.day">27</span>
+                        <span class="date-name" data-i18n="festivals.calendar.27.name">Día de la Chicha Tolimense</span>
+                    </div>
+                    <div class="date-item">
+                        <span class="date-number" data-i18n="festivals.calendar.29.day">29</span>
+                        <span class="date-name" data-i18n="festivals.calendar.29.name">Día de la Lechona Tolimense</span>
+                    </div>
+                </div>
+                <div class="calendar-image">
+                    <img src="Images/tamal.webp" alt="Tamal Tolimense">
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!--footer-->
     <footer class="footer">
         <div class="social">
@@ -85,19 +159,19 @@
 
         <ul class="list">
             <li>
-                <a href="#">Home</a>
+                <a href="#" data-i18n="footer.home">Home</a>
             </li>
             <li>
-                <a href="#">Monumentos</a>
+                <a href="#" data-i18n="footer.monuments">Monumentos</a>
             </li>
             <li>
-                <a href="#">Fiestas</a>
+                <a href="#" data-i18n="footer.festivals">Fiestas</a>
             </li>
             <li>
-                <a href="#">Música</a>
+                <a href="#" data-i18n="footer.music">Música</a>
             </li>
             <li>
-                <a href="#">About us</a>
+                <a href="#" data-i18n="footer.about">About us</a>
             </li>
         </ul>
         <p class="copyright">
@@ -106,17 +180,7 @@
 
     </footer>
 </body>
-<script>
-    function showSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex'
-    }
+<script src="js/script.js"></script>
 
-    function hideSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'none'
-    }
 
-</script>
-
-</html>
+</html>]]>

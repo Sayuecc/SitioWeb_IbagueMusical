@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<![CDATA[<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,58 +22,70 @@
 </head>
 
 <body>
-    <header>
-
-        <nav>
-
-
-            <ul class="sidebar">
-
-                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
-                            viewBox="0 96 960 960" width="26">
-                            <path
-                                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                        </svg></a></li>
-                </a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="monumentos.html">Monumentos</a></li>
-                <li><a href="fiestas.html">Fiestas</a></li>
-                <li><a href="musica.html">Música</a></li>
-                <li><a href="aboutUs.html">About us</a></li>
-
-            </ul>
-            <ul>
-
-
-                <a href="index.html" class="logo">
-                    <img src="Images/logo.png" alt="logo clave de sol" class="logo__img">
-                    <span class="logo__text">IBAGUÉ MUSICAL</span>
-                </a>
-
-
-
-
-                <li class="hideOnMobile"><a href="index.html">Home</a></li>
-                <li class="hideOnMobile"><a href="monumentos.html">Monumentos</a></li>
-                <li class="hideOnMobile"><a href="fiestas.html">Fiestas</a></li>
-                <li class="hideOnMobile"><a href="musica.html">Música</a></li>
-                <li class="hideOnMobile"><a href="aboutUs.html">About us</a></li>
-                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                            height="26" viewBox="0 96 960 960" width="26">
-                            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
-                        </svg></a></li>
-
-                <!--<div class="idioma">
-                        <li><a href="#"><img src="Images/colombia.png" alt="icono bandera colombia"></a></li>
-                        <li><a href="#"><img src="Images/united-states.png" alt="icono bandera usa"></a></li>
-                     </div>  -->
-
-            </ul>
-
-
-        </nav>
-
-    </header>
+    <div id="navbar"></div>
+    
+    <!-- Heading (hidden by default) -->
+    <div id="heading-section" style="display: none;">
+        <div class="heading">
+            <h1 data-i18n="monuments.heading.title">Monumentos</h1>
+        </div>
+    </div>
+    
+    <!-- Ruta Musical Section -->
+    <div id="sitios-historicos" style="display: none;">
+        <div class="heading">
+            <h1 data-i18n="monuments.route.title">Atrevete a conocer Ibagué</h1>
+            <p data-i18n="monuments.route.subtitle">Una ruta por los monumentos musicales del centro de la ciudad</p>
+        </div>
+        <div class="container-ruta">
+            <div class="ruta-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d7955.632141555029!2d-75.24777230516845!3d4.445302582115704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e2!4m5!1s0x8e38c4bfd366240b%3A0x7cde665d6fc79fd8!2sParque%20de%20la%20M%C3%BAsica%2C%20Cra.%201A%20Sur%20%2389%2C%20Ibagu%C3%A9%2C%20Tolima!3m2!1d4.443207699999999!2d-75.2442093!4m5!1s0x8e38c4833a57e905%3A0x4daa95a7eb4b4fda!2sConservatorio%20del%20Tolima%2C%20Cl.%209%20%23118%2C%20Ibagu%C3%A9%2C%20Tolima!3m2!1d4.4435204!2d-75.2445884!4m5!1s0x8e38c541b8a0af93%3A0x9a9e75041cf0dcf3!2ssala%20alberto%20castilla%2C%20Cra%203%20%23calle%2011%2C%20Ibagu%C3%A9%2C%20Tolima!3m2!1d4.4434881!2d-75.244321!4m5!1s0x8e38c484bebba1f7%3A0x4c9d807d3125b402!2sTeatro%20Tolima%2C%20Cra%203%20%2311a-2%2C%20Ibagu%C3%A9%2C%20Tolima!3m2!1d4.4437763!2d-75.2411024!4m5!1s0x8e38c4846d72ee2f%3A0x676c20e4de8ff3fe!2sPlaza%20de%20Los%20Artesanos%2C%20Cra.%205%20%2310-39%2C%20Ibagu%C3%A9%2C%20Tolima!3m2!1d4.4460092!2d-75.24110329999999!4m5!1s0x8e38c4840a502727%3A0x19a7dd21da728411!2sConcha%20Ac%C3%BAstica%20Garz%C3%B3n%20y%20Collazos%2C%20Cra.%205%20%238%2C%20Ibagu%C3%A9%2C%20Tolima!3m2!1d4.4466494!2d-75.241869!4m5!1s0x8e38c486be32a54d%3A0xf3c5705efa1e2870!2sMuseo%20Pan%C3%B3ptico%20de%20Ibagu%C3%A9%2C%20Cl.%2011%20%239-73a%2C%20Ibagu%C3%A9%2C%20Tolima!3m2!1d4.4480048!2d-75.24068319999999!5e0!3m2!1ses!2sco!4v1774217610340!5m2!1ses!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="ruta-content">
+                <p data-i18n="monuments.route.intro">Te invitamos a realizar este recorrido por la ciudad de Ibagué, donde tendrás la oportunidad de visitar los principales monumentos dedicados a la música ibaguereña.</p> 
+                
+                <p data-i18n="monuments.route.park">Puedes empezar por el icónico Parque de la Música, donde encontrarás estatuas de personajes interpretando diversos instrumentos musicales. Además, a pocos pasos se encuentra el Conservatorio del Tolima, monumento nacional e insignia de la educación musical en la ciudad y en el país. Muy cerca también está el emblemático Salón de Conciertos Alberto Castilla, nombrado en honor a uno de los más importantes promotores de la música en la región.</p>
+                
+                <p data-i18n="monuments.route.theater">Si continúas por la carrera tercera, llegarás al Teatro Tolima, construido en [año], un escenario donde miles de tolimenses han disfrutado de la música local y nacional.</p>
+                
+                <p data-i18n="monuments.route.square">Al dirigirte hacia la carrera quinta, encontrarás la Plazoleta de los Artesanos, donde se destaca la escultura de la clave de sol. Justo detrás se ubica la Concha Acústica, construida en [año], un espacio tradicional donde antiguamente se realizaban presentaciones folclóricas.</p>
+                
+                <p data-i18n="monuments.route.panoptico">Finalmente, puedes terminar este recorrido por el centro de la ciudad en el Museo Panóptico, un lugar que actualmente alberga presentaciones musicales y de danza.</p>
+                
+                <p><strong data-i18n="monuments.route.cta">¡Ven y disfruta de la riqueza cultural y musical de Ibagué!</strong></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Por qué recordar Section -->
+    <div id="arquitectura-moderna" style="display: none;">
+        <div class="heading">
+            <h1 data-i18n="monuments.memory.title">Por qué recordar</h1>
+            <p data-i18n="monuments.memory.subtitle">Los monumentos y su lugar en la memoria</p>
+        </div>
+        <div class="container1">
+            <section class="about about-reverse">
+                <div class="about-reverse-container">
+                    <div class="about-content">
+                        <p style="font-style: italic; color: #6d2323; margin-bottom: 20px;" data-i18n="monuments.memory.quote">Reflexionemos sobre el papel de los monumentos en la construcción y establecimientos de ciertos imaginarios</p>
+                        <p data-i18n="monuments.memory.paragraph1">Los monumentos son formas de pedagogía de la memoria que sirven para darle representatividad y materialidad a un recuerdo concreto. Son construidos con una voluntad en mente que se quiso que perdurara. No son automáticos ni productos del azar, sino de la voluntad humana. Cada monumento, escultura y busto tiene un sinfín de decisiones de memoria que determinan el cómo y la forma en que se le da representatitividad a una memoria.</p><br>
+                        
+                        <p data-i18n="monuments.memory.paragraph2">Los monumentos son llamados por Pierre Nora como "lugares de memoria", que se entienden como marcas en el espacio público creadas por un grupo determinado y que tienen como objetivo mantener y visibilizar un recuerdo colectivo.</p><br>
+                        
+                        <p data-i18n="monuments.memory.paragraph3">Lo anterior es importante porque nos permite reflexionar sobre el rol de los monumentos en la construcción de una imagen de Ibagué como la ciudad Musical de Colombia.<br><br>
+                        
+                         Nos invita a pensar a los ibaguereños, tolimenses, colombianos y extranjeros sobre la Ibagué imaginada. Pensar en el proceso, los logros y la lógica bajo la que se fue desarrollando e impactando en el espacio público de la capital tolimense.<br><br>
+                        
+                         Esperamos que este sitio web sea ese granito que necesitan para iniciar su reflexión.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="Images/monumentoRotonda.webp" alt="Monumento Rotonda">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
     <!--footer-->
     <footer class="footer">
         <div class="social">
@@ -85,19 +97,19 @@
 
         <ul class="list">
             <li>
-                <a href="#">Home</a>
+                <a href="#" data-i18n="footer.home">Home</a>
             </li>
             <li>
-                <a href="#">Monumentos</a>
+                <a href="#" data-i18n="footer.monuments">Monumentos</a>
             </li>
             <li>
-                <a href="#">Fiestas</a>
+                <a href="#" data-i18n="footer.festivals">Fiestas</a>
             </li>
             <li>
-                <a href="#">Música</a>
+                <a href="#" data-i18n="footer.music">Música</a>
             </li>
             <li>
-                <a href="#">About us</a>
+                <a href="#" data-i18n="footer.about">About us</a>
             </li>
         </ul>
         <p class="copyright">
@@ -107,17 +119,7 @@
     </footer>
 </body>
 
-<script>
-    function showSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex'
-    }
+<script src="js/script.js"></script>
 
-    function hideSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'none'
-    }
 
-</script>
-
-</html>
+</html>]]>
