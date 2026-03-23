@@ -4,29 +4,47 @@
             <!--Sidebar (mobile)-->
             <ul class="sidebar">
 
-                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-                <li><a href="monumentos.html" data-i18n="nav.monuments">Monumentos</a></li>
-                <li><a href="fiestas.html" data-i18n="nav.festivals">Fiestas</a></li>
-                <li><a href="musica.html" data-i18n="nav.music">Música</a></li>
-                <li><a href="aboutUs.html" data-i18n="nav.about">About us</a></li>
-
-                <!--bandera de idioma-->
-
-                <li class="idioma-mobile">
-
-                    <div class="banderas">
-                        <a href="#" id="bandera-es-mobile"><img src="Images/colombia.png" alt="icono bandera colombia"></a>
-                        <a href="#" id="bandera-en-mobile"><img src="Images/united-states.png" alt="icono bandera usa"></a>
-                </li>
-                </div>
-                <!--menu hamburguesa-->
-
                 <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
                             viewBox="0 96 960 960" width="26">
                             <path
                                 d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
                         </svg></a></li>
-                </a></li>
+
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle" data-i18n="nav.monuments">Monumentos</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="monumentos.html#sitios-historicos" data-i18n="nav.musicalRoute">Ruta Musical</a></li>
+                        <li><a href="monumentos.html#arquitectura-moderna" data-i18n="nav.whyRemember">Por qué recordar</a></li>
+                    </ul>
+                </li>
+
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle" data-i18n="nav.festivals">Fiestas</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="fiestas.html#concursos" data-i18n="nav.contests">Concursos</a></li>
+                        <li><a href="fiestas.html#san-pedro" data-i18n="nav.festivalEvents">Festivales</a></li>
+                    </ul>
+                </li>
+
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle" data-i18n="nav.music">Música</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="musica.html#musica-clasica" data-i18n="nav.history">Historia</a></li>
+                        <li><a href="musica.html#musica-folclorica" data-i18n="nav.musicalCity">Ciudad Musical</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="aboutUs.html" data-i18n="nav.about">About us</a></li>
+
+                <!--bandera de idioma-->
+                <li class="idioma-mobile">
+                    <div class="banderas">
+                        <a href="#" id="bandera-es-mobile"><img src="Images/colombia.png" alt="icono bandera colombia"></a>
+                        <a href="#" id="bandera-en-mobile"><img src="Images/united-states.png" alt="icono bandera usa"></a>
+                    </div>
+                </li>
 
             </ul>
 
