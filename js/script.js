@@ -5,7 +5,7 @@ const translations = {
     "nav.monuments": "Monumentos",
     "nav.festivals": "Fiestas",
     "nav.music": "Música",
-    "nav.about": "About us",
+    "nav.about": "Acerca De",
     "nav.mission": "Misión",
     "nav.vision": "Visión",
     "nav.musicalRoute": "Ruta Musical",
@@ -95,7 +95,8 @@ const translations = {
     "music.genres.paragraph5": "Más que ser el lugar de origen de todos estos ritmos, Ibagué se consolidó como un punto de encuentro musical. Su ubicación estratégica permitió que por allí circularan diferentes tradiciones, sonidos y expresiones culturales, que fueron adoptadas y conservadas por sus habitantes.",
     "music.genres.paragraph6": "De esta manera, la importancia musical de Ibagué no radica únicamente en la creación de ritmos propios, sino en su papel como escenario de encuentro, difusión y preservación del folclor andino colombiano.",
     "music.monuments.title": "Monumentos Musicales",
-    "music.monuments.intro": "En 1886, el conde Gabriac visitó Ibagué en su recorrido por el paso del Quindío. Según escribió en sus crónicas de viaje, durante su estadía percibió la inclinación de sus gentes por la danza y la música, así, doquiera que iba escuchaba continuamente las melodías de guitarras y de flautas. De manera detallada describe la fascinación hacia la música de los ibaguereños, quienes, sin importar si eran aficionados, artistas, enamorados o mendigos, acostumbraban a pasearse juntos y tocar bajo las ventanas de sus enamoradas.",
+    "music.monuments.intro": "En 1886, el conde Gabriac visitó Ibagué en su recorrido por el paso del Quindío. Según escribió en sus crónicas de viaje, durante su estadía percibió la inclinación de sus gentes por la danza y la música, así, doquiera que iba escuchaba continuamente las melodías de guitarras y de flautas.",
+    "music.monuments.intro2": "De manera detallada describe la fascinación hacia la música de los ibaguereños, quienes, sin importar si eran aficionados, artistas, enamorados o mendigos, acostumbraban a pasearse juntos y tocar bajo las ventanas de sus enamoradas.",
     "music.monuments.subtitle": "Algunas esculturas y bustos con temática musical que puedes visitar",
     "music.monuments.conservatory.title": "Conservatorio del Tolima",
     "music.monuments.conservatory.description": "El edificio del Conservatorio de Música del Tolima fue construido en 1893, cuando funcionaba como la Escuela Normal de Varones. Posteriormente, fue remodelado en 1930. Su estructura original estaba hecha en madera y cubierta con tejas de barro cocido. En 1994, el Congreso de Colombia lo declaró Monumento Nacional mediante la Ley 112, reconociendo su importancia en la formación musical del país.",
@@ -328,6 +329,28 @@ function initializeNavbar() {
       });
 
       bindLanguageButtons();
+
+      const mobileToggles = document.querySelectorAll(".mobile-dropdown-toggle");
+      mobileToggles.forEach((toggle) => {
+        const dropdown = toggle.closest(".mobile-dropdown");
+        const submenu = dropdown ? dropdown.querySelector(".mobile-submenu") : null;
+
+        toggle.addEventListener("click", function (event) {
+          event.preventDefault();
+          if (dropdown) {
+            dropdown.classList.toggle("active");
+          }
+        });
+
+        if (submenu) {
+          submenu.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", function () {
+              hideSidebar();
+            });
+          });
+        }
+      });
+
       applyTranslations(currentLanguage);
     });
 }
